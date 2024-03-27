@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let size=+prompt("how to get the element from client")
+        let num;
+        let Esum=0;
+        let Osum=0;
+        for(a=0;a<=size;a++){
+            num=+prompt("enter a number")
+            if(num%2==0){
+                Esum=Esum+num
+            }
+            else{
+              Osum=Osum+num;  
+            }
+        }
+        let greatestEorO=(Esum,Osum)=>{
+        if(Esum>Osum){
+           return console.log("greatest even sum => "+Esum);
+        }
+        else{
+          return  console.log("greatest odd sum=>"+Osum);
+        }
+    }
+       greatestEorO(Esum,Osum); 
+    </script>
+</head>
+<body>
+    <h3>Write function to find sum of all the  even and odd number.Print the greatest number;</h3>
+</body>
+</html>

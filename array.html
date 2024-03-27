@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=[50,70,73,81,2,0,5,31]
+        // for(let i=0;i<arr.length;i++){
+        //     if(arr[i]%2==0){
+        //         console.log(arr[i]+"is even")
+        //     }
+        //     else{
+        //         console.log(arr[i]+"is odd")
+        //     }
+        // }
+        let newarr=arr.slice(1,6)
+        newarr[3]="hello"
+        console.log(newarr);
+        console.log(arr);
+        let even=[]
+        let odd=[]
+        for(let i=0;i<arr.length;i++){
+            if(i%2==0){
+                even.push(arr[i]);
+                console.log(arr[i]+"is even"+i)
+            }
+            else{
+                odd.push(arr[i])
+                console.log(arr[i]+"is odd index"+i)
+            }
+        }
+        console.log(even)
+        console.log(odd)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

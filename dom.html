@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        // function submit(){
+        //     document.write("Submited");
+        // }
+        let ul=document.getElementById('l2');
+        ul.innerHTML="hello";
+    </script> -->
+</head>
+<body>
+    <ul class="ul1" id="u">
+        <li class="l" id="l1">list 1</li>
+        <li class="l" id="l2">List 2</li>
+        <li class="l" id="l3">list 3</li>
+    </ul>
+    <form action="">
+        <fieldset>
+            <legend>Registeration form</legend>
+            <label for="n">
+                Name
+            </label><input type="text">
+            <label for="">Password</label>
+            <input type="text">
+            <input type="submit" value="submit" onclick="submit();">
+        </fieldset>
+    </form>
+    <p>hello saurabh</p>
+    <script>
+        //  function submit(){
+        //     document.write("Submited");
+        //  }
+        let ul=document.getElementsByClassName('l');
+        console.log(ul)
+        for(i=0;i<ul.length;i++){
+        console.log(ul[i].innerHTML);
+
+        }
+        let p=document.getElementsByTagName('p')[0];
+        console.log(p)
+        p.innerHTML="Saurabh";
+        let div=document.createElement("div")
+        document.body.appendChild(div);
+        div.innerHTML="I am new member";
+        let l1=document.querySelector(".l")
+        let parent=l1.parentElement;
+        parent.setAttribute("class","chombi")
+        let newclass=document.getElementsByClassName('chombi');
+        newclass.innerHTML="heo"
+        console.log(newclass)
+        newclass.removeAttribute("id","chombi");
+
+
+        l1.innerHTML="hey"
+        
+        // div.textContent=
+        
+        // for(i=0;i<p.length;i++){
+        //   p[i].innerHTML="hello";
+        // }
+        
+    </script>
+</body>
+</html>

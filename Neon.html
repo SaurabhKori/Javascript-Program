@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num=+prompt("Enter a Number");
+        let sq=num*num;
+        let sum=0;
+        while(sq!=0){
+            
+            sum=sum+(sq%10);
+            sq/=10
+            
+        }
+        if(sum=num){
+            document.write(`${num} is neon number ${sum}`);
+        }
+        else{
+            document.write(`${num} is not neon number ${sum}`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

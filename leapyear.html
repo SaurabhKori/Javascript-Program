@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num=+prompt("Enter a Year");
+        // (
+        //     function (num){
+        //         if(num%100!=0 && (num%4==0||num%400==0)){
+        //             console.log(`${num} is leap year`);
+
+        //         }
+        //         else{
+        //             console.log(`${num} not leap year`)
+        //         }
+        //     }
+        // )(num)
+        // (
+        //     function(){
+        //        let sum=0;
+        //         for(let i=1;i<=100;i++){
+        //             sum=sum+i;
+                    
+                   
+        //         }
+        //         console.log(sum);
+        //         console.log("average of natural number"+sum/100)
+        //     }
+        // )();
+        // (
+        //     function evenOdd(num){
+        //         if(num%2==0){
+        //             console.log("even number")
+        //         }
+        //         else{
+        //             console.log("odd number")
+        //         }
+        //     }
+        // )(num)
+        
+       let r= function countdigit(num){
+             let count=0;
+
+            while(num!=0){
+                
+                //  num%10;
+                count++;
+                num = Math.floor(num/10);
+            }
+            return count;
+        }
+        console.log(r(num));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

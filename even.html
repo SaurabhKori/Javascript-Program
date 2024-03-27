@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>3
+        //take input from client in array and print the sum of all even number in the array
+        // let arr1= [];
+        // let size=+prompt("Enter a size");
+        //  for(let i=0;i<size;i++){
+        //  arr1[i]=+prompt("enter a array value")
+        //  }
+        // console.log(arr1);
+        // function sumofeven(arr1){
+        //    let sum=0;
+        //     for(let a=0;a<arr1.length;a++){
+        //         if(arr1[a]%2==0){
+        //             sum=sum+arr1[a];
+                    
+        //         }
+        //     }
+        //     return sum; 
+        // }
+        // console.log(sumofeven(arr1))
+        
+        //.....By Arrow function.....//
+        let arr1= [];
+        let size=+prompt("Enter a size");
+         for(let i=0;i<size;i++){
+         arr1[i]=+prompt("enter a array value")
+         }
+        console.log(arr1);
+        let sumofeven=arr1=>{
+          let sum=0;
+          for(let a=0;a<arr1.length;a++){
+            if(arr1[a]%2==0){
+                sum=sum+arr1[a];
+            }
+          }
+          return sum;
+        }
+        console.log(sumofeven(arr1));
+    </script>
+
+</head>
+<body>
+    <h3>Even Number</h3>
+</body>
+</html>

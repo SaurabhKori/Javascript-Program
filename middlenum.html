@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //write a program takes array of number and return the median of the array(the middle number when the array is sorted)
+        // let arr1=[]
+        // let midnum;
+        // let size=+prompt("Enter a size of array")
+        // for(a1=0;a1<=size;a1++){
+        //     arr1[a1]=+prompt("Enter a array element")
+        // }
+        // if(arr1.length %2==0){
+        //     midnum=arr1[arr1.length/2-1]
+        // }
+        // else{
+        //     midnum=arr1[(arr1.length-1)/2]
+        // }
+        // console.log(midnum)
+
+         //write a function takes array of number and return the median of the array(the middle number when the array is sorted)
+        let arr1=[]
+         let size=+prompt("Enter a size of array")
+        for(a1=0;a1<=size;a1++){
+            arr1[a1]=+prompt("Enter a array element")
+        }
+        let midnum=arr=>{
+            let midnum;
+            if(arr.length%2==0){
+                midnum=arr[arr.length/2-1];
+                return midnum;
+            }
+            
+            else{
+             midnum=arr[(arr.length-1)/2];
+             return midnum;
+            }
+        }
+        console.log(midnum(arr1))
+    </script>
+</head>
+<body>
+    <h3>Middle number</h3>
+</body>
+</html>

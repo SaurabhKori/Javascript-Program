@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // foreach method of array;=====
+        let arr=[1,4,3,5,9,2,];
+        arr.push(4);
+        
+        arr.pop();
+        console.log(arr)
+        let arr2=arr.forEach((value,index,array)=>{
+            if(value%2===0){
+                console.log(value+" == is even number ");
+                console.log(index)
+                console.log(array)
+            }
+        })
+
+        
+        console.log(arr2);
+        
+         let result=arr.map((value)=>value*30);
+         console.log(result);
+        let result2=result.filter((value)=>{
+             if(value>50){
+                return true;
+             }
+        }
+        
+         );
+         console.log(result2);
+         let short=arr.sort((c,d)=>c-d);
+         console.log(short)
+         console.log(arr.indexOf(9))
+         console.log(arr.includes(1))
+         let str="Hello Guys! how are you?"
+         let a=(Array.from(str))
+         console.log(a);
+         let b=a.forEach((value)=>{
+            console.log(value)}
+            )
+        //  console.log(b);
+         
+         
+        // let result3=arr.reduce((a,value)=>{
+        //     a= a+value;
+        //     return a;
+
+        // }
+        
+        // ,0)
+        // console.log(result3)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
